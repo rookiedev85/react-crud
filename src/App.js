@@ -18,11 +18,6 @@ const App = () => {
     setItems((prevItems) => prevItems.filter((prevItem) => prevItem.id !== id));
   };
 
-  const handleUpdate = async (item) => {
-    const updatedItem = await updateItem(item);
-    setItems(items.map((i) => (i.id === item.id ? updatedItem : i)));
-  };
-
   return (
     <div>
       <h1>Hello</h1>
