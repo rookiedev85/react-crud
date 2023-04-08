@@ -20,10 +20,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Hello</h1>
-      <div>
         <PostsTable postsData={items} onDelete={handleDelete} onUpdate={handleUpdate} />
-      </div>
     </div>
   )
 
